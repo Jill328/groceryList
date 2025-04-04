@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery List</title>
+    <link rel="stylesheet" href="style.css"></link>
+    <!--Added Rubik font from Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--Montserrat font as variable-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color:white;
+        }
+    </style>
+</head>
+<body>
+    <!--In New Orleans, we 'make groceries' instead of 'go grocery shopping'-go figure-->
+    <!--Add logo for Makin Grocercies-->
+    <Header>
+    <img src="Images/makinGroceries.png" alt="grocery handbasket with food with the tagline, makin groceries with meal plan" style="width:300px">
+    </Header>
+    <h1>Meal Plan</h1>
+        <main class="meal-grid">
+            <div class="meal-card">
+                <img src="Images/thaiCucumberNoodleSalad.png" alt="Bowl of cucumber noodles, tofu, carrots, red bell peppers, and crushed peanuts">
+                <p>Thai Cucumber "Noodle" Salad with Tofu</p>
+            </div>
+            
+            <div class="meal-card">
+                <img src="Images/cilantroLimeChickenThighs.png"         alt="bowl of cut up grilled chicken thighs with a side of avocado, halved grape tomatoes, chopped red onion and cilantro">
+                <p>Cilantro-Lime Chicken Thighs</p>
+            </div>
+           
+            <div class="meal-card">
+                <img src="Images/steakstirfry.png" alt="Bowl of stir fried sliced steak, sliced red pepper and asparagus spears ">
+                <p>Steak, Asparagus & Bell Pepper Stir Fry</p>
+            </div>
+           
+            <div class="meal-card">
+                <img src="Images/coconutChix.png" alt="Plate of sauteed chicken breast, sliced zucchini, grape tomatoes in a yellow curry sauce on a bed of cauliflower rice.">
+                <p>Peanut-Coconut Chicken Curry</p>
+            </div>
+           
+            <div class="meal-card">
+                <img src="Images/AvoSalad.png" alt="Bowl of grilled chicken breast, sliced Avocado, fresh mozzarella, sliced grape tomatoes on a bed of mixed greens dressed with a balsaminc vinaigrette.">
+                <p>Avocado Caprese Salad with Grilled Chicken</p>
+            </div>
+           
+            <div class="meal-card">
+                <img src="Images/chickpeaSalad.png" alt="Bowl of chopped steamed broccoli, bell pepper, chiick peas and feta cheese dreseed with a lemon dressing.">
+                <p>Broccoli Bell Peer & Chickpea Salad with Feta & Zesty Lemon Dressing</p>
+            </div>
+           
+            <div class="meal-card">
+                <img src="Images/turkeyEggRollBowl.png" alt="2 bowls of sauteed turkey, shelled edamame, carrot sticks, and cauliflower rice with chopsticks.">
+                <p>Turkey Egg Roll Bowl with Spicy Mayo</p>
+
+            </div>
+        </main>
+<!--Begin Grocery List-->
+            <div class="category">Produce</div>
+            <ul class="grocery-list"></ul>
+              <li class="grocery-item"><input type="radio">   <label>Apples</label> <span class="quantity">2</span>
+              <li class="grocery-item"><input type="radio"><label>Bananas</label> <span class="quantity">2</span>
+              <li class="grocery-item"><input type="radio"><label>avocados</label> <span class="quantity">2</span>
+              <li class="grocery-item"><input type="radio"><label>Asparagus</label> <span class="quantity">2</span>
+              <li class="grocery-item"><input type="radio"><label>Carrots</label> <span class="quantity">3</span> 
+            </ul>
+
+            <div class="category">Meat</div>
+            <ul class="grocery-list"></ul>
+              <li class="grocery-item"><input type="radio"><label>Ground Turkey</label><span class="quantity">1.5lbs</span>
+              <li class="grocery-item"><input type="radio"><label>Steak, NY Strip</label> <span class="quantity">2lbs</span>
+              <li class="grocery-item"><input type="radio"><label>Chicken Breast, boneless/skinless</label> <span class="quantity">1.5lbs</span>
+              <li class="grocery-item"><input type="radio"><label>Chicken Thighs, Boneless/skinless</label> <span class="quantity">2lbs</span>
+            </ul>
+
+
+            <div class="category">Pantry</div>
+            <ul class="grocery-list"></ul>
+              <li class="grocery-item"><input type="radio"><label>Chickpeas</label> <span class="quantity">2 cans</span>
+              <li class="grocery-item"><input type="radio"><label>Dijon Mustard</label> <span class="quantity">1</span>
+              <li class="grocery-item"><input type="radio"><label>Curry Powder</label> <span class="quantity">1 bottle</span>
+              <li class="grocery-item"><input type="radio"><label>Balsamic Vinegar</label> <span class="quantity">1 bottle</span>
+              <li class="grocery-item"><input type="radio"><label>Soy Sauce, reduced sodium</label> <span class="quantity">1 bottle</span>
+            </ul>
+
+            
+            <div class="category">Frozen Foods</div>
+            <ul class="grocery-list"></ul>
+              <li class="grocery-item"><input type="radio"><label>Frozen Peas</label> <span class="quantity">2 bags</span>
+              <li class="grocery-item"><input type="radio"><label>Frozen Strawberries</label> <span class="quantity">2</span>
+              <li class="grocery-item"><input type="radio"><label>Ice Cream, Chocolate Chip  Mint</label> <span class="quantity">1 gallon</span>
+             </ul>         
+
+            <div class="category">Dairy</div>
+            <ul class="grocery-list"></ul>
+              <li class="grocery-item"><input type="radio"><label>Milk,2%</label> <span class="quantity">1 gallon</span>
+              <li class="grocery-item"><input type="radio"><label>Feta Cheese</label> <span class="quantity"></span>
+              <li class="grocery-item"><input type="radio"><label>Eggs</label> <span class="quantity">1 doz</span>
+              <li class="grocery-item"><input type="radio"><label>OJ</label> <span class="quantity"></span>
+                
+            </ul>
+           
+            <div class="category">Prepared Foods</div>
+            <ul class="grocery-list"></ul>
+              <li class="grocery-item"><input type="radio"><label>Hummus</label> <span class="quantity">1</span>
+              <li class="grocery-item"><input type="radio"><label>Fresh Mozzarella Cheese</label> <span class="quantity">1</span> 
+            </ul>
+
+            <div class="category">Household Items</div>
+            <ul class="grocery-list"></ul>
+              <li class="grocery-item"><input type="radio"><label>Laundry Detergent</label> <span class="quantity">1</span>
+              <li class="grocery-item"><input type="radio"><label>Paper Towels</label> <span class="quantity">6 pack</span>
+              <li class="grocery-item"><input type="radio"><label>Soft Scrub</label> <span class="quantity"></span>
+              <li class="grocery-item"><input type="radio"><label>Dish Soap</label> <span class="quantity"></span>
+              <li class="grocery-item"><input type="radio"><label>Garbage bags</label> <span class="quantity"></span>
+                
+            </ul>
+            <div class="category">Toiletries</div>
+            <ul class="grocery-list"></ul>
+              <li class="grocery-item"><input type="radio"><label>Toothpaste</label> <span class="quantity">2</span>
+              <li class="grocery-item"><input type="radio"><label>Toothbrushes</label> <span class="quantity">3</span>
+              <li class="grocery-item"><input type="radio"><label>Shampoo</label> <span class="quantity">2</span>
+              <li class="grocery-item"><input type="radio"><label>Conditionair</label> <span class="quantity">2</span>
+              <li class="grocery-item"><input type="radio"><label>Moisturizer</label> <span class="quantity">1</span>
+            
+            </ul> 
+        </main>      
+</body>
+</html>

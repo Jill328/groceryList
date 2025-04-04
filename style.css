@@ -1,0 +1,98 @@
+/*New font*/ 
+.rubik {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+  }
+
+body{
+    font-family: "Rubik", sans-serif;
+    margin: 0;
+    padding:20px;
+    background-color: #fff;
+    
+}
+
+header{
+    font-size: 2em;
+    font-family: Rubik;
+    text-align: center;
+}
+
+
+h1{
+    font-size: 2em;
+    text-align: left;
+    background-color: #d4f5c3;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8;
+}
+
+.meal-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+.meal-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.meal-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.meal-card p {
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/*Grocery list styling*/
+
+/*Category Header*/
+.category {
+    font-size: 12px;
+    color: gray;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.grocery-list {
+    list-style-type: none;
+    padding: 20px;
+    margin: 0;
+}
+
+.grocery-item {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    font-size: 16px;
+    justify-content: space-between; /* Distributes space between label and quantity */
+}
+
+.grocery-item input {
+    margin-right: 10px;
+}
+
+.grocery-item label {
+    flex-grow: 1;
+    font-style: italic;
+    cursor: pointer;
+}
+
+.quantity {
+    text-align: right; /* Right-aligns the text within the quantity span */
+        /* You can add other styling here, like font-size, color, etc. */   
+}
+
