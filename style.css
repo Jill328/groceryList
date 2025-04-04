@@ -36,6 +36,8 @@ h1{
     gap: 20px;
     padding: 20px;
 }
+
+/* Style Cards as Flip Card with recipe on links to a recipe page--> */
 .meal-card {
     background-color: white;
     border-radius: 10px;
@@ -84,6 +86,7 @@ h1{
     border-bottom: 1px solid #eee;
     font-size: 16px;
     justify-content: space-between; /* Distributes space between label and quantity */
+    background-color: rgb(246, 216, 237);
 }
 
 .grocery-item input {
